@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX STRESSER</title>
+    <link rel="stylesheet" href="stresser.css">
+</head>
+<body>
+    <header>
+        <video id="bg-video" poster="assets/tumbnail.png" autoplay muted loop>
+            <source src="zero.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        
+        <div class="forimg">
+            <img src="zeronet.PNG" alt="Banner Image" />
+        </div>
+        
+        <div class="container">
+            <h1>Web Stresser</h1>
+            <form id="stress-form">
+                <input type="text" id="target-url" placeholder="Target URL" required>
+                <input type="text" id="port" placeholder="Masukkan Port" required>
+                <input type="text" id="time-attack" placeholder="Waktu Serangan (detik)" required>
+                <button id="stress-btn" type="submit">Stress</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
